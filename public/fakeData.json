@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "cover_img": "https://i.ibb.co/gMkQgYX/tp228-presentation-06-385.jpg",
+    "author": "John Doe",
+    "posted_date": "2023-09-01",
+    "authors_img": "https://i.ibb.co/CHP2kX7/boy2.jpg",
+    "reading_time": 5,
+    "hashtags": ["Time Management", "Productivity", "Self-Improvement"]
+  },
+  {
+    "id": 2,
+    "cover_img": "https://i.ibb.co/ZxkCTMN/6170792.jpg",
+    "author": "Jane Smith",
+    "posted_date": "2023-09-05",
+    "authors_img": "https://i.ibb.co/VCxBbzZ/girl1.jpg",
+    "reading_time": 11,
+    "hashtags": ["Fitness", "Health", "Wellness"]
+  },
+  {
+    "id": 3,
+    "cover_img": "https://i.ibb.co/gZjfFdb/Fashion-sale.jpg",
+    "author": "Michael Johnson",
+    "posted_date": "2023-09-10",
+    "authors_img": "https://i.ibb.co/qsfVnzq/girl2.jpg",
+    "reading_time": 10,
+    "hashtags": ["Cooking", "Food", "Recipes"]
+  },
+  {
+    "id": 4,
+    "cover_img": "https://i.ibb.co/mb8M9B3/6042497.jpg",
+    "author": "Emily Davis",
+    "posted_date": "2023-09-15",
+    "authors_img": "https://i.ibb.co/dGPPG5X/boy1.png",
+    "reading_time": 12,
+    "hashtags": ["Travel", "Nature", "Adventure"]
+  },
+  {
+    "id": 5,
+    "cover_img": "https://i.ibb.co/m4NFqNh/purchase-sale-discount-fashion-style.jpg",
+    "author": "David Wilson",
+    "posted_date": "2023-09-20",
+    "authors_img": "https://i.ibb.co/dGPPG5X/boy1.png",
+    "reading_time": 8,
+    "hashtags": ["Photography", "Art", "Creativity"]
+  }
+]
