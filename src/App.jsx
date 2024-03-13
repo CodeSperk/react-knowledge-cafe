@@ -13,8 +13,12 @@ function App() {
     setBookmarks(newBookmarkedArray);
   } 
 
-  const handleMarkedAsRead = time => {
+  const handleMarkedAsRead = (time, id) => {
     setReadingTime(readingTime + time);
+
+    // remove read items
+    const remainingBookmarks = bookmarks.filter(bookmark => bookmark.id !== id);
+    setBookmarks(remainingBookmarks);
   }
   return (
     <div className="max-w-7xl p-3 md:p-6 lg:p-12 mx-auto">

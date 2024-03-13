@@ -3,7 +3,7 @@ import { FaRegBookmark } from "react-icons/fa";
 
 
 const Vlog = ({blog, handleBookmark, handleMarkedAsRead}) => {
-  const {cover_img, title, author, posted_date, authors_img, reading_time, hashtags} = blog;
+  const {id, cover_img, title, author, posted_date, authors_img, reading_time, hashtags} = blog;
 
   return (
     <div className='border-b-2 pb-6'>
@@ -26,13 +26,13 @@ const Vlog = ({blog, handleBookmark, handleMarkedAsRead}) => {
       </div>
 
         <h4 className='font-bold text-2xl my-4'>{title}</h4>
-      <small className='flex gap-4 text-lg'>
+      <p className='flex gap-4 text-lg'>
         {
           hashtags.map((hashtag, idx) => <span key={idx}>#{hashtag}</span>)
         }  
-      </small>
+      </p>
 
-      <button className='mt-2 w-full text-start text-[#6047EC] hover:text-[#261680] underline font-semibold' onClick={()=>handleMarkedAsRead(reading_time)}>Mark as read
+      <button className='mt-2 w-full text-start text-[#6047EC] hover:text-[#261680] underline font-semibold' onClick={()=>handleMarkedAsRead(reading_time, id)}>Mark as read
       </button>
 
       
