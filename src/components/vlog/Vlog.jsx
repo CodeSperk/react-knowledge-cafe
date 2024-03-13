@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { FaRegBookmark } from "react-icons/fa";
 
 
-const Vlog = ({blog, handleBookmark}) => {
+const Vlog = ({blog, handleBookmark, handleMarkedAsRead}) => {
   const {cover_img, title, author, posted_date, authors_img, reading_time, hashtags} = blog;
 
   return (
@@ -32,7 +32,7 @@ const Vlog = ({blog, handleBookmark}) => {
         }  
       </small>
 
-      <button className='mt-2 w-full text-start'><a href="" className='text-[#6047EC] hover:text-[#261680] underline font-semibold '>Mark as read</a>
+      <button className='mt-2 w-full text-start text-[#6047EC] hover:text-[#261680] underline font-semibold' onClick={()=>handleMarkedAsRead(reading_time)}>Mark as read
       </button>
 
       
@@ -42,7 +42,8 @@ const Vlog = ({blog, handleBookmark}) => {
 
 Vlog.propTypes = {
   blog: PropTypes.isRequired,
-  handleBookmark: PropTypes.func
+  handleBookmark: PropTypes.func,
+  handleMarkedAsRead: PropTypes.func,
 }
 
 export default Vlog;
