@@ -9,8 +9,17 @@ function App() {
   const [readingTime, setReadingTime] = useState(0);
 
   const handleBookmark = blog =>{
-    const newBookmarkedArray = [...bookmarks, blog];
-    setBookmarks(newBookmarkedArray);
+    let isAlreadyBookmarked = false;
+
+    for (let bookmark of bookmarks){
+      if(bookmark.id === blog.id){
+        isAlreadyBookmarked = true;
+      }
+    }
+    if(!isAlreadyBookmarked){
+      const newBookmarkedArray = [...bookmarks, blog];
+      setBookmarks(newBookmarkedArray);
+    }
   } 
 
   const handleMarkedAsRead = (time, id) => {
