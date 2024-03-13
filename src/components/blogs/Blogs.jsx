@@ -14,16 +14,15 @@ const Blogs = () => {
 
 
   return (
-    <div className="bg-blue-300 md:w-2/3 p-4 md:p-6">
-      <h3>Number of blogs: {blogs.length}</h3>
-      <div>
+    <div className="md:w-2/3 p-4 md:p-6 space-y-10">
+     
         {
           blogs.map(blog => <Vlog 
             key={blog.id}
             blog={blog}
           ></Vlog>)
         }
-      </div>
+  
       
     </div>
   );
